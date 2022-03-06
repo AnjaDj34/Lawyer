@@ -7,3 +7,19 @@ img{
 body{
     font-family: $base-font;
 }
+
+main{
+    padding-top: 52px;
+}
+
+@media(min-width:576px){
+    main{
+        padding-top: 57px;
+    }
+}
+@media(min-width:992px){
+    main{
+        padding-top: 77px;
+    }
+}
+
