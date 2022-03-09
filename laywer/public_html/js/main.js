@@ -1,6 +1,6 @@
- 
- $(document).ready(function(){
- //ANIMATION
+
+$(document).ready(function () {
+    //ANIMATION
     function animation() {
         let  windowHeight = $(window).height();
         let scroll = $(window).scrollTop();
@@ -22,9 +22,28 @@
     });
     animation();
 
+// team-slider
+
+    if ($('.team-member-slider').length < 0) {
+        $('.team-member-slider').owlCarousel({
+
+            loop: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 0
+                },
+                992: {
+                    items: 2,
+                    margin: 30
+                }
+            }
+        });
+
+    }
 
 
 
-
- });
+});
 
